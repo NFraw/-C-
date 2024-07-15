@@ -28,6 +28,7 @@ int main() {
 	printf("%s\n", s);
 	scanf_s("%s", s);
 	printf("scanf_s : %s\n", s);
+	getchar();
 	scanf_s("%[a-z]", s);
 	printf("%%[a-z] : %s", s);
 	return 0;
