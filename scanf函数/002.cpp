@@ -25,8 +25,8 @@
 
 int main() {
 	char s[100];
-	scanf_s("%[^\n]", s);
-	int n = 2;
+	scanf_s("%[^\n]", &s, (unsigned)sizeof(s));
+	int n;
 	n = printf("%s", s);
 	printf(" : %d\n", n);
 	return 0;
