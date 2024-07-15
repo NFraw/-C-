@@ -15,15 +15,20 @@
 * 
 * 
 */
+
 /*
 * 题目：
 * 读入可能带空格的字符串，并输出这个字符串中的字符数量
-* 
 */
 
 #include<stdio.h>
 
 int main() {
-
+	char s[100];
+	printf("%s\n", s);
+	scanf_s("%s", s);
+	printf("scanf_s : %s\n", s);
+	scanf_s("%[a-z]", s);
+	printf("%%[a-z] : %s", s);
 	return 0;
 }
