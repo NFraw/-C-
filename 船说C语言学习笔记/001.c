@@ -15,6 +15,7 @@
 
 int main() {
 	int n, digit;
+	printf("请输入数字，返回值为十进制数字的位数");
 	scanf_s("%d", &n);
 	digit = printf("%d", n);
 	printf(" has %d digit(s)\n", digit);
