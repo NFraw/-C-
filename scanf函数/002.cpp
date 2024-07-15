@@ -18,18 +18,16 @@
 
 /*
 * 题目：
-* 读入可能带空格的字符串，并输出这个字符串中的字符数量
+* 读入一行可能带空格的字符串，并输出这个字符串中的字符数量
 */
-
+//集合格式占位符：为了限定可以读入的元素
 #include<stdio.h>
 
 int main() {
 	char s[100];
-	printf("%s\n", s);
-	scanf_s("%s", s);
-	printf("scanf_s : %s\n", s);
-	getchar();
-	scanf_s("%[a-z]", s);
-	printf("%%[a-z] : %s", s);
+	scanf_s("%[^\n]", s);
+	int n = 2;
+	n = printf("%s", s);
+	printf(" : %d\n", n);
 	return 0;
 }
