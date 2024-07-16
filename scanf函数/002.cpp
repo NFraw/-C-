@@ -25,7 +25,8 @@
 
 int main() {
 	char s[100];
-	scanf_s("%[^\n]", &s, (unsigned)sizeof(s));
+	scanf_s("%[^\n]", &s, (unsigned)sizeof(s));   
+	//在 scanf_s 中，当你使用 %[^\n] 格式说明符读取字符串时，需要提供缓冲区的大小作为额外的参数。
 	int n;
 	n = printf("%s", s);
 	printf(" : %d\n", n);
