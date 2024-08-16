@@ -1,3 +1,10 @@
+/*************************************************************************
+        > File Name: how_many_day.c
+        > Author:ZhangNan 
+        > Mail:1470161695@qq.com 
+        > Created Time: Fri 16 Aug 2024 09:22:10 PM CST
+ ************************************************************************/
+
 #include<stdio.h>
 int main(){
     int year, month;
@@ -21,7 +28,7 @@ int main(){
         case 10:printf("31天\n");break;
         case 11:printf("30天\n");break;
         case 12:printf("31天\n");break;
-        default:printf("输入月份有误！\n");break;
+        default:printf("月份输入错误\n");break;
     }
     return 0;
 }
